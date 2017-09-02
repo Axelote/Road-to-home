@@ -1,0 +1,10 @@
+var lr = require('tiny-lr'), // Минивебсервер для livereload
+gulp = require('gulp'), // Сообственно Gulp JS
+sass = require('gulp-sass'), // Плагин для Stylus
+livereload = require('gulp-livereload'), // Livereload для Gulp
+csso = require('gulp-csso'), // Минификация CSS
+imagemin = require('gulp-imagemin'), // Минификация изображений
+uglify = require('gulp-uglify'), // Минификация JS
+concat = require('gulp-concat'), // Склейка файлов
+connect = require('connect'), // Webserver
+server = lr();
