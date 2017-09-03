@@ -1,0 +1,432 @@
+// RESET CSS
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+border:0;
+font-size:100%;
+font:inherit;
+vertical-align:baseline;
+margin:0;
+padding:0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+body {
+line-height:1;
+}
+
+ol,ul {
+list-style:none;
+}
+
+blockquote,q {
+quotes:none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+content:none;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+// RESET CSS
+
+// SASS VARIABLES
+
+$font-stack: 'Open Sans', sans-serif;
+$bg-brdr-color: #f2f2f2;
+$primary-color: #474747;
+$grey-color: #b5b5b5;
+$button-yellow: #e5c332;
+$font-size-small: 15px;
+$font-size-medium: 17px;
+
+// SASS VARIABLES
+
+body {
+	min-width: 320px;
+	font-family:$font-stack;
+	background: $bg-brdr-color;
+	color: $primary-color;
+}
+.sprite-side {
+	position: relative;
+}
+.sprite-side:before {
+	content: '';
+	position: absolute;
+	background-image: url('../img/sprite.png');
+	background-repeat: no-repeat;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.inline {
+	display: inline-block;
+}
+.page-rth {
+	background: url('../img/top-bg.jpg') no-repeat center top;
+	padding-top: 319px;
+	padding-bottom: 155px;
+}
+.rth-layout {
+	background: #fff;
+	width: 940px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 43px 80px 0;
+	-webkit-box-shadow: 0 5px 15px 5px rgba(0,0,0,0.05);
+	box-shadow: 0 5px 15px 5px rgba(0,0,0,0.05);
+	padding-bottom: 60px;
+}
+.rth-post-content {
+	margin-bottom: 31px;
+}
+.rth-post-title {
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 800;
+	border-bottom: 2px solid $bg-brdr-color;
+	padding-bottom: 6px;
+	margin-bottom: 7px;
+}
+.rth-post-title:before {
+	width: 32px;
+	height: 32px;
+	background-position: 0px 0px;
+	left: -56px;
+}
+.rth-post-date {
+	font-size: $font-size-small;
+	font-weight: 600;
+	color: $grey-color;
+	margin-bottom: 12px;
+}
+.rth-post-text {
+	font-size: $font-size-medium;
+	line-height: normal;
+	margin-bottom: 25px;
+	text-align: justify;
+	word-break: break-word;
+}
+.rth-post-img {
+	float: left;
+	border-color: $bg-brdr-color;
+	border-style: solid;
+	border-width: 5px 5px 5px 0;
+	margin-left: -80px;
+	margin-right: 20px;
+	display: block;
+	box-sizing: border-box;
+	height: 253px;
+	position: relative;
+}
+.rth-post-img-hover {
+	position: absolute;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	top: 0;
+	left: 0;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5) url('../img/eye.png') no-repeat center;
+	margin: 10px;
+	display: none;
+}
+.rth-post-img:hover .rth-post-img-hover {
+	display: block;
+}
+.rth-post-img-hover-sign {
+	color: #fff;
+	font-size: 13px;
+	position: absolute;
+	bottom: 33px;
+	left: 50%;
+	margin-left: -56px;
+}
+.rth-post-img a {
+	display: block;
+}
+.rth-post-info {
+	border-top: 2px solid $bg-brdr-color;
+	border-bottom: 2px solid $bg-brdr-color;
+	padding: 17px 0 19px;
+}
+.rth-post-info-i {
+	color: $grey-color;
+	font-size: $font-size-small;
+	padding-left: 17px;
+	margin-right: 43px;
+}
+.rth-post-info-i:last-child {
+	margin-right: 0;
+}
+.rth-post-info-i span {
+	font-weight: 600;
+}
+.rth-post-info-author:before {
+	width: 13px;
+	height: 13px;
+	background-position: 0px -35px;
+	left: 0;
+	top: 1px;
+}
+.rth-post-info-date:before {
+	width: 14px;
+	height: 13px;
+	background-position: 0px -51px;
+	left: -1px;
+	top: 1px;
+}
+.rth-post-info-comments:before {
+	width: 16px;
+	height: 13px;
+	background-position: 0px -67px;
+	left: -3px;
+	top: 1px;
+}
+.rth-comments-block-title {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 42px;
+}
+.rth-comment-i {
+	margin-bottom: 40px;
+}
+.rth-comment-i:last-child {
+	margin-bottom: 0;
+}
+.rth-comment-i-leave {
+	border-bottom: 2px solid $bg-brdr-color;
+	padding-bottom: 10px;
+}
+.rth-comment-i-left {
+	float: left;
+	width: 88px;
+}
+.rth-comment-i-avatar {
+	width: 88px;
+	height: 88px;
+	box-sizing: border-box;
+	border: 2px solid #ebeced;
+	padding: 2px;
+	border-radius: 4px;
+	line-height: 80px;
+}
+.rth-comment-i-avatar img {
+	max-width: 80px;
+	max-height: 80px;
+	vertical-align: middle;
+}
+.rth-comment-i-right {
+	margin-left: 110px;
+}
+.rth-comment-i-textarea-wrap {
+	margin-bottom: 8px;
+}
+textarea {
+	resize: none;
+	display: inline-block;
+	width: 100%;
+	height: 88px;
+	box-sizing: border-box;
+	border: 2px solid $bg-brdr-color;
+	border-radius: 4px;
+	padding: 9px 15px;
+	font-size: $font-size-medium;
+	color: $primary-color;
+}
+textarea::-webkit-input-placeholder {
+	color: #bebebe;
+}
+textarea:-moz-placeholder {
+	color: #bebebe;
+}
+textarea::-moz-placeholder {
+	color: #bebebe;
+}
+textarea:-ms-input-placeholder {
+	color: #bebebe;
+}
+.rth-comment-i-btn {
+	text-align: right;
+}
+.rth-btn {
+	display: inline-block;
+	cursor: pointer;
+	background: none;
+	border: 0;
+	outline: none;
+	text-decoration: none;
+	white-space: nowrap;
+	padding: 13px 49px 11px;
+	font-size: $font-size-medium;
+	color: $primary-color;
+	font-weight: 600;
+	border-radius: 4px;
+}
+.rth-btn-yellow {
+	background: $button-yellow;
+}
+.rth-btn:hover {
+	opacity: 0.8;
+}
+.rth-comment-i-heading {
+	margin-bottom: 16px;
+}
+.rth-comment-i-name {
+	font-size: $font-size-medium;
+	font-weight: 600;
+	margin-right: 7px;
+}
+.rth-comment-i-text {
+	font-size: $font-size-medium;
+	margin-bottom: 16px;
+}
+.rth-comment-i-actions {
+	margin-bottom: 24px;
+}
+.rth-post-action-i {
+	font-size: $font-size-small;
+	color: $grey-color;
+	padding-left: 20px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+.rth-post-action-i:last-child {
+	margin-right: 0;
+}
+.rth-post-action-i-edit:before {
+	width: 16px;
+	height: 12px;
+	background-position: 0px -84px;
+	left: 0;
+	top: 1px;
+}
+.rth-post-action-i-delete:before {
+	width: 11px;
+	height: 11px;
+	background-position: 0px -99px;
+	left: 5px;
+	top: 3px;
+}
+.rth-post-action-i-reply:before {
+	width: 15px;
+	height: 14px;
+	background-position: 0px -113px;
+	left: 1px;
+	top: 0px;
+}
+.rth-comment-form {
+	margin-bottom: 19px;
+}
+.rth-comment-i-form-heading {
+	margin-bottom: 18px;
+}
+.rth-comment-form-i {
+	font-size: $font-size-small;
+	color: $grey-color;
+}
+.rth-comment-form-i-to {
+	padding-left: 20px;
+}
+.rth-comment-form-i-to:before {
+	width: 16px;
+	height: 14px;
+	background-position: 0px -130px;
+	left: 0px;
+	top: 0px;
+}
+.rth-comment-form-i-cancel {
+	float: right;
+	cursor: pointer;
+}
+.rth-comment-form-i-cancel:before {
+	width: 11px;
+	height: 11px;
+	background-position: 0px -99px;
+	left: -16px;
+	top: 3px;
+}
+.rth-comment-i-reply {
+	margin-bottom: 20px;
+}
+.rth-comment-i-reply-left {
+	float: left;
+}
+.rth-comment-i-reply-avatar {
+	width: 68px;
+	height: 68px;
+	box-sizing: border-box;
+	border: 2px solid #ebeced;
+	padding: 2px;
+	border-radius: 4px;
+	line-height: 60px;
+}
+.rth-comment-i-reply-avatar img {
+	max-width: 60px;
+	max-height: 60px;
+	vertical-align: middle;
+}
+.rth-comment-i-reply-right {
+	margin-left: 90px;
+}
+.rth-comment-i-reply .rth-comment-form-i-to {
+	margin-right: 7px;
+}
+.rth-comments-load {
+	position: relative;
+	text-align: center;
+}
+.rth-comments-load:before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 19px;
+	width: 100%;
+	height: 2px;
+	background: $bg-brdr-color;
+}
+.rth-comments-load-btn {
+	display: inline-block;
+	font-size: $font-size-medium;
+	color: $grey-color;
+	border: 2px solid $bg-brdr-color;
+	padding: 10px 16px;
+	background: #fff;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+}
+.rth-comments-load-btn:hover {
+	background: $bg-brdr-color;
+	color: $primary-color;
+}
+.rth-comments-load-btn:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -12px;
+	background: #fff;
+	width: 10px;
+	height: 100%;
+}
+.rth-comments-load-btn:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -12px;
+	background: #fff;
+	width: 10px;
+	height: 100%;
+}
