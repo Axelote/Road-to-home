@@ -220,7 +220,7 @@ body {
 	border: 2px solid #ebeced;
 	padding: 2px;
 	border-radius: 4px;
-	line-height: 80px;
+	text-align: center;
 }
 .rth-comment-i-avatar img {
 	max-width: 80px;
@@ -370,7 +370,7 @@ textarea:-ms-input-placeholder {
 	border: 2px solid #ebeced;
 	padding: 2px;
 	border-radius: 4px;
-	line-height: 60px;
+	text-align: center;
 }
 .rth-comment-i-reply-avatar img {
 	max-width: 60px;
@@ -429,4 +429,46 @@ textarea:-ms-input-placeholder {
 	background: #fff;
 	width: 10px;
 	height: 100%;
+}
+
+@media (min-width: 768px) {
+  .rth-layout {
+      width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .rth-layout {
+      width: 940px;
+  }
+}
+@media (max-width: 768px) {
+  .page-rth {
+    padding-bottom: 60px;
+  }
+  .rth-layout {
+      padding: 40px 15px 0;
+  }
+}
+@media (max-width: 450px) {
+  .rth-post-img {
+    float: none;
+    text-align: center;
+    margin: 0;
+    height: auto;
+  }
+  .rth-post-img img {
+    width: 100%;
+  }
+  .rth-comment-i-text {
+    line-height: 23px;
+  }
+  .rth-comment-i-avatar, .rth-comment-i-reply-avatar {
+    display: none;
+  }
+  .rth-comment-i-right {
+    margin-left: 0;
+  }
+  .rth-comment-i-reply-right {
+      margin-left: 15px;
+  }
 }
